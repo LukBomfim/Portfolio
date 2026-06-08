@@ -2,7 +2,7 @@
  
 Página de portfólio pessoal desenvolvida com **HTML**, **CSS** e **JavaScript**, apresentando minhas habilidades, projetos e informações de contato.
  
-🔗 **[Acesse o portfólio ao vivo](https://lukbomfim.github.io/Portfolio/)**
+🔗 **[Acesse o portfólio ao vivo](https://lukbomfim-portfolio.vercel.app/)**
  
 ---
  
