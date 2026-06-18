@@ -51,9 +51,17 @@ async function linguagens(repos) {
 }
 
 async function exibirRepositorios() {
-    const repositorios = await carregarRepositorios()
+    const spinner = document.getElementById('spinner')
     const lista = document.getElementById('lista-projetos')
+
+    spinner.style.display = 'block'
+    lista.style.display = 'none'
+
+    const repositorios = await carregarRepositorios()
     const linguagensProjeto = await linguagens(repositorios)
+
+    spinner.style.display = 'none'
+    lista.style.display = 'grid'
 
     repositorios.forEach(repo => {
         const item = document.createElement('li')
