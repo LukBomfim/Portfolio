@@ -247,6 +247,20 @@ nav a:hover {
     color: var(--cor-destaque-hover);
 }
 
+#msg-erro #btn-atualizar {
+    margin-top: 20px;
+    color: var(--cor-texto-fraco);
+    font-size: 0.8rem;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+#msg-erro #btn-atualizar:hover {
+    color: var(--cor-texto);
+    background-color: transparent;
+}
+
 /* PROJETOS */
 
 #spinner {
