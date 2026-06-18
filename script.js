@@ -12,6 +12,12 @@ async function carregarRepositorios() {
         urls.map(url => fetch(url))
     )
 
+    respostas.forEach(resposta => {
+        if (!resposta.ok) {
+            throw new Error(`Erro ${resposta.status}`)
+        }
+    })
+
     const repos = await Promise.all(
         respostas.map(resposta => resposta.json())
     )
@@ -53,12 +59,26 @@ async function linguagens(repos) {
 async function exibirRepositorios() {
     const spinner = document.getElementById('spinner')
     const lista = document.getElementById('lista-projetos')
+    const erro = document.getElementById('msg-erro')
 
     spinner.style.display = 'block'
     lista.style.display = 'none'
 
-    const repositorios = await carregarRepositorios()
-    const linguagensProjeto = await linguagens(repositorios)
+    let repositorios;
+    let linguagensProjeto;
+
+    await new Promise(resolve => setTimeout(resolve, 3000))
+
+    try{
+        repositorios = await carregarRepositorios()
+        linguagensProjeto = await linguagens(repositorios)
+    } 
+    catch (e) {
+        erro.style.display = 'block'
+        spinner.style.display = 'none'
+        return
+    }
+    
 
     spinner.style.display = 'none'
     lista.style.display = 'grid'
