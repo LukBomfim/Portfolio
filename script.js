@@ -171,6 +171,4 @@ async function exibirRepositorios() {
 
 }
 
-window.onload = function() {
-    exibirRepositorios()
-}
+document.addEventListener('DOMContentLoaded', exibirRepositorios)

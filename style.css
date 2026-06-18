@@ -212,6 +212,14 @@ nav a:hover {
 }
 
 /* PROJETOS */
+
+#spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
 #lista-projetos {
     list-style: none;
     display: grid;

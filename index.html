@@ -104,6 +104,36 @@
         <section id="projetos" class="container">
             <h3>Projetos</h3>
 
+            <div id="spinner">
+                <svg width="80%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg">
+
+                    <style>
+                        .animated { fill: none; stroke: #4d9fff; stroke-width: 8; stroke-linecap: round; }
+                        .trail1 { 
+                            stroke-dasharray: 360 9999; 
+                            stroke-dashoffset: 360; 
+                            animation: move 1.5s linear infinite; }
+                        @keyframes move {
+                            from { stroke-dashoffset: 360; }
+                            to   { stroke-dashoffset: -1800; } /* comprimento do path + tamanho do traço */
+                        }
+                    </style>
+                    
+                    <g transform="translate(165, 30)">
+                        <path class="animated trail1" d="
+                        M20,0 L330,0 Q350,0 350,20
+                        L350,220 Q350,240 330,240
+                        L310,240 L330,255 L360,270
+                        L360,300 Q360,310 350,310
+                        L0,310 Q-10,310 -10,300
+                        L-10,270 L20,255 L40,240
+                        L20,240 Q0,240 0,220
+                        L0,20 Q0,0 20,0 Z
+                        "/>
+                    </g>
+                </svg>
+            </div>
+
             <ul id="lista-projetos">
             </ul>
         </section>
@@ -154,6 +184,6 @@
         &copy; Lucas Bomfim - 2026
     </footer>
     
-<script src="script.js"></script>
+<!--<script src="script.js"></script>-->
 </body>
 </html>
