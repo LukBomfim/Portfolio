@@ -4,6 +4,7 @@ async function carregarRepositorios() {
         'https://api.github.com/repos/LukBomfim/Locadora',
         'https://api.github.com/repos/LukBomfim/Farma-Maceio',
         'https://api.github.com/repos/LukBomfim/cc-org-camp',
+        'https://api.github.com/repos/LukBomfim/FixJa',
         'https://api.github.com/repos/LukBomfim/Biblioteca',
         'https://api.github.com/repos/LukBomfim/MELLK',
         'https://api.github.com/repos/LukBomfim/lista-de-tarefas'
