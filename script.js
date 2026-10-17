@@ -2,6 +2,7 @@ async function carregarRepositorios() {
     const urls = [
         'https://api.github.com/repos/LukBomfim/Fcar',
         'https://api.github.com/repos/LukBomfim/Locadora',
+        'https://api.github.com/repos/LukBomfim/Farma-Maceio',
         'https://api.github.com/repos/LukBomfim/cc-org-camp',
         'https://api.github.com/repos/LukBomfim/Biblioteca',
         'https://api.github.com/repos/LukBomfim/MELLK',
